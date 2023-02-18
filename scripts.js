@@ -25,8 +25,10 @@ encrypt.addEventListener('click', () => {
     for (const letter of input_word.toLowerCase()) {
 
 
-        if(keyVal > 27){
-            continue
+        if(keyVal >= 27){
+            alert('Step size cannot be more than 26' )
+            break
+            
         }
 
         if(!list_obj.includes(letter)){
@@ -58,7 +60,9 @@ decrypt.addEventListener('click', () => {
     for (const letter of input_word.toLowerCase()) {
 
         if(keyVal > 27){
-            continue
+            alert('Step size cannot be more than 26' );
+            break
+            
         }
 
 
