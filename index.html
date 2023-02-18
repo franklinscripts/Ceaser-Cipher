@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceaser's Cipher Decrypt | Encrypt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        h1{
+            font-size: 18px;
+            text-align: center;
+            color: rgb(12, 55, 68);
+        }
+        .msg{
+            display: flex;
+            margin-top: 1.5em;
+        }
+        .msg p{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        @media (min-width: 660px) {
+        .container{
+            width: 50%;
+        }
+        .first-layer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5em;
+
+            margin: 1.5em;
+            margin-top: 2em;
+        }
+        .first-layer input{
+            margin: 0.4em;
+            
+        }
+        button:last-child{
+            float: unset;
+        }
+        .second-layer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1.3em;
+        }
+        .second-layer button{
+            margin: 1.3em;
+        }
+        span, 
+        p{
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    </style>
+    <div class="container">
+        <h1>The Ultimate Cipher breakageApp</h1>
+        <div class="first-layer">
+           <label for="">
+            Enter Cipher:
+           </label> <input type="text" id="cipher_text" ><br />
+            <label for="">Enter Step Size: </label><input type="text" id="step_size" >
+        </div>
+        <div class="second-layer">
+            <button id="decrypt">Decrypt</button>
+            <button id="encrypt">Encrypt</button>
+        </div>
+        <div class="msg">
+            <span>Message: </span> &nbsp;&nbsp;<p id="msg"></p>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
