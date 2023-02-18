@@ -25,7 +25,7 @@ encrypt.addEventListener('click', () => {
     for (const letter of input_word.toLowerCase()) {
 
 
-        if(keyVal > 50){
+        if(keyVal > 27){
             continue
         }
 
@@ -57,11 +57,11 @@ decrypt.addEventListener('click', () => {
 
     for (const letter of input_word.toLowerCase()) {
 
-        if(keyVal > 50){
+        if(keyVal > 27){
             continue
         }
 
-        
+
 
         if(!list_obj.includes(letter)){
             continue
